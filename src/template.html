@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+  </head>
+  <body>
+    <button class="viewByProjectButton">View by Project</button>
+    <button class="viewAllButton">View All Tasks</button>
+    <button class="newTaskButton">New Task</button>
+
+    <div class="content"></div>
+
+    <dialog class="newTaskDialog">
+      <form class="newTaskForm">
+        <label for="taskTitle">Task:</label>
+        <input type="text" name="taskTitle" id="taskTitle" required />
+        <br />
+
+        <label for="notes">Notes:</label>
+        <input type="text" name="notes" id="notes" />
+        <br />
+
+        <!-- <label for="project">Project:</label>
+            <input type="text" name="project" id="project">
+            <br> -->
+
+        <label for="project">Project:</label>
+        <select name="project" id="project" class="newTaskProject">
+          <option value="None">None</option>
+          <option value="New Project">New Project</option>
+          <!-- insert values from projectsArray here as option-->
+        </select>
+        <br />
+
+        <input
+          type="text"
+          id="newProjectInput"
+          placeholder="Enter new project name"
+        />
+
+        <label for="dueDate">Date Due:</label>
+        <input type="date" name="dueDate" id="dueDate" />
+        <br />
+
+        <label for="priority">Priority:</label>
+        <select name="priority" id="priority">
+          <option value="Low">Low</option>
+          <option value="Medium">Medium</option>
+          <option value="High">High</option>
+        </select>
+        <br />
+
+        <!-- <label for="projectList">Project:</label>
+            <input list="projects" id="projects" name="projects" />
+            <datalist id="projects">
+                <option value="None">
+                <option value="placeholder">
+            </datalist>
+            <br> -->
+
+        <button type="reset">Clear</button>
+        <br />
+        <button class="cancelButton">Cancel</button>
+        <br />
+        <button type="submit" class="submitNewButton">Add Task</button>
+        <br />
+      </form>
+    </dialog>
+
+    <dialog class="editTaskDialog">
+      <form class="editTaskForm">
+        <h3 class="taskTitleOnEditForm"></h3>
+        <br />
+
+        <label for="notes">Notes:</label>
+        <input type="text" name="notes" id="notes" class="editTaskNotes" />
+        <br />
+
+        <!-- <label for="project">Project:</label>
+            <input type="text" name="project" id="project" class="editTaskProject">
+            <br> -->
+
+        <label for="project">Project:</label>
+        <select name="project" id="project" class="editTaskProject">
+          <option value="None">None</option>
+          <option value="New Project">New Project</option>
+          <!-- insert values from projectsArray here as option-->
+        </select>
+        <br />
+
+        <input
+          type="text"
+          id="editProjectInput"
+          placeholder="Enter new project name"
+        />
+
+        <label for="dueDate">Date due:</label>
+        <input
+          type="date"
+          name="dueDate"
+          id="dueDate"
+          class="editTaskDueDate"
+        />
+        <br />
+
+        <label for="priority">Priority:</label>
+        <select name="priority" id="priority" class="editTaskPriority">
+          <option value="Low">Low</option>
+          <option value="Medium">Medium</option>
+          <option value="High">High</option>
+        </select>
+        <br />
+
+        <button class="cancelButton">Cancel</button>
+        <br />
+        <button type="submit" class="submitEditButton">Make Changes</button>
+        <br />
+      </form>
+    </dialog>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+body {
+  background-color: lavender;
+}
+
+.taskTable {
+  background-color: blanchedalmond;
+  border-collapse: collapse;
+  border: 1px solid grey;
+  table-layout: auto;
+  min-width: 500px;
+}
+
+.taskTable tr:first-child {
+  background-color: saddlebrown;
+}
+
+.taskTable th,
+.taskTable td {
+  border-collapse: collapse;
+  border: 1px solid grey;
+}
+
+.taskTable th:nth-child(1) {
+  width: 20px;
+}
+
+.taskTable th:nth-child(2) {
+  width: 32%;
+}
+
+.taskTable th:nth-child(3) {
+  width: 32%;
+}
+
+.taskTable th:nth-child(4) {
+  width: 120px;
+}
+
+.taskTable th:nth-child(5) {
+  width: 80px;
+}
+
+.taskTable th:nth-child(6) {
+  width: 60px;
+}
+
+.taskTable th:nth-child(7) {
+  width: 60px;
+}
+
+.projectRow {
+  background: lightseagreen;
+}
